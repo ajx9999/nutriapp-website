@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block title %}NUTRIAPP | Diet and Nutrition{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container hero-content">
+        <p class="eyebrow">SMART NUTRITION, SIMPLIFIED</p>
+        <h1>Developing a recommendation app for diet and nutrition</h1>
+        <p class="hero-text">
+            NUTRIAPP helps users build healthier eating habits through personalized
+            meal recommendations, calorie tracking, and easy progress monitoring.
+        </p>
+
+        <div class="button-group">
+            <a class="button button-primary" href="{{ url_for('form', type='Start Free Trial') }}">Start Free Trial</a>
+            <a class="button button-secondary" href="{{ url_for('form', type='Request Demo') }}">Request Demo</a>
+            <a class="button button-light" href="{{ url_for('form', type='Sign Up for Free Plan') }}">Sign Up for Free Plan</a>
+            <a class="button button-light" href="{{ url_for('form', type='Purchase Subscription') }}">Purchase Subscription</a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container two-column">
+        <article class="content-card">
+            <h2>Project Objective</h2>
+            <p>
+                To design and develop a mobile application for diet and nutrition that
+                helps users develop a healthy diet and track their progress using the application.
+            </p>
+        </article>
+
+        <article class="content-card">
+            <h2>Value Proposition</h2>
+            <p>
+                A simple and personalized diet and nutrition app that helps users set
+                goals, get meal recommendations, and monitor dietary progress.
+            </p>
+        </article>
+    </div>
+</section>
+
+<section class="section section-soft">
+    <div class="container">
+        <div class="section-heading">
+            <p class="eyebrow">WHAT NUTRIAPP OFFERS</p>
+            <h2>Key Features</h2>
+        </div>
+
+        <div class="feature-grid">
+            <article class="feature-card">
+                <span class="feature-number">01</span>
+                <h3>User Profiling</h3>
+                <p>Create a profile based on age, weight, height, goals, and dietary preferences.</p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">02</span>
+                <h3>Meal Recommendations</h3>
+                <p>Suggest meal choices based on nutritional goals and user preferences.</p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">03</span>
+                <h3>Calorie Tracking</h3>
+                <p>Help users monitor daily calorie intake and stay aligned with targets.</p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">04</span>
+                <h3>Progress Monitoring</h3>
+                <p>Track user improvement over time through simple progress summaries.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container about-project">
+        <div>
+            <p class="eyebrow">OUR FOCUS</p>
+            <h2>Why This Project Matters</h2>
+        </div>
+
+        <ul class="check-list">
+            <li>Supports healthier eating habits through guided recommendations.</li>
+            <li>Helps users track nutrition goals in a simple mobile-friendly way.</li>
+            <li>Combines recommendation logic with progress tracking in one app.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-soft">
+    <div class="container project-description">
+        <h2>Project Description</h2>
+        <p>
+            This project focuses on building a recommendation app for diet and nutrition.
+            The team will research existing recommendation apps and nutrition systems,
+            then design and develop a mobile application that can be used for dietary recommendation.
+        </p>
+    </div>
+</section>
+{% endblock %}

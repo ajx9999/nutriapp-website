@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Team Members | NUTRIAPP{% endblock %}
+
+{% block content %}
+<section class="page-banner">
+    <div class="container">
+        <p class="eyebrow">THE PEOPLE BEHIND NUTRIAPP</p>
+        <h1>Team Members</h1>
+        <p>Meet the team developing the diet and nutrition recommendation application.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container team-grid">
+        {% for member in members %}
+        <article class="member-card">
+            <div class="avatar">{{ member.name[0] }}</div>
+            <h2>{{ member.name }}</h2>
+            <a href="mailto:{{ member.email }}">{{ member.email }}</a>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
