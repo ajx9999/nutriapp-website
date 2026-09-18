@@ -3,114 +3,108 @@
 {% block title %}NUTRIAPP | Diet and Nutrition{% endblock %}
 
 {% block content %}
+<!-- Home introduction -->
 <section class="hero">
     <div class="container hero-content">
         <p class="eyebrow">NUTRIAPP</p>
         <h1>Personalised nutrition guidance, goal tracking and meal recommendations in one mobile app.</h1>
+        <p class="hero-text">
+            The product aims to provide users with tools to manage their nutrition and
+            dietary goals effectively.
+        </p>
 
         <div class="button-group">
-            <a class="button button-primary" href="{{ url_for('form', type='Start Free Trial') }}">
-                Start Free Trial
-            </a>
-
-            <a class="button button-secondary" href="{{ url_for('form', type='Request Demo') }}">
-                Request Demo
-            </a>
-
-            <a class="button button-light" href="{{ url_for('form', type='Sign Up for Free Plan') }}">
-                Sign Up for Free Plan
-            </a>
-
-            <a class="button button-light" href="{{ url_for('form', type='Purchase Subscription') }}">
-                Purchase Subscription
-            </a>
+            <a class="button button-primary" href="{{ url_for('form', type='Start Free Trial') }}">Start Free Trial</a>
+            <a class="button button-secondary" href="{{ url_for('form', type='Request Demo') }}">Request Demo</a>
+            <a class="button button-light" href="{{ url_for('form', type='Sign Up for Free Plan') }}">Sign Up for Free Plan</a>
+            <a class="button button-light" href="{{ url_for('form', type='Purchase Subscription') }}">Purchase Subscription</a>
         </div>
     </div>
 </section>
 
+<!-- Official mission and vision -->
 <section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <p class="eyebrow">NUTRIAPP</p>
-            <h2>Mission and Vision</h2>
-        </div>
+    <div class="container two-column">
+        <article class="content-card">
+            <h2>Mission</h2>
+            <p>
+                To help users make healthier food choices by providing simple,
+                personalized nutrition guidance, dietary goal tracking, and useful
+                meal recommendations.
+            </p>
+        </article>
 
-        <div class="mission-vision-grid">
-            <article class="mission-card">
-                <div class="circle-icon">◎</div>
-                <h2>Mission</h2>
-                <p>
-                    To help users make healthier food choices by providing simple,
-                    personalized nutrition guidance, dietary goal tracking, and useful
-                    meal recommendations.
-                </p>
-            </article>
-
-            <article class="vision-card">
-                <div class="circle-icon light-icon">◉</div>
-                <h2>Vision</h2>
-                <p>
-                    To become an accessible and trusted mobile platform that helps
-                    people build healthier eating habits and improve their long-term
-                    well-being.
-                </p>
-            </article>
-        </div>
+        <article class="content-card">
+            <h2>Vision</h2>
+            <p>
+                To become an accessible and trusted mobile platform that helps people
+                build healthier eating habits and improve their long-term well-being.
+            </p>
+        </article>
     </div>
 </section>
 
+<!-- Main product features -->
 <section class="section section-soft">
     <div class="container">
         <div class="section-heading">
-            <p class="eyebrow">PRODUCT OBJECTIVES</p>
-            <h2>Product Objectives</h2>
-            <p class="section-description">
-                The product aims to provide users with tools to manage their nutrition
-                and dietary goals effectively. It should allow users to:
-            </p>
+            <p class="eyebrow">WHAT NUTRIAPP OFFERS</p>
+            <h2>Key Features</h2>
         </div>
 
-        <div class="objectives-grid">
-            <article class="objective-item">
-                <span>✓</span>
+        <div class="feature-grid">
+            <article class="feature-card">
+                <span class="feature-number">01</span>
+                <h3>Personal Health Profile</h3>
                 <p>Create and manage a personal health profile.</p>
             </article>
 
-            <article class="objective-item">
-                <span>✓</span>
+            <article class="feature-card">
+                <span class="feature-number">02</span>
+                <h3>Calorie Intake</h3>
                 <p>Calculate recommended daily calorie intake based on user information.</p>
             </article>
 
-            <article class="objective-item">
-                <span>✓</span>
+            <article class="feature-card">
+                <span class="feature-number">03</span>
+                <h3>Dietary Preferences</h3>
                 <p>Choose dietary preferences or diet types.</p>
             </article>
 
-            <article class="objective-item">
-                <span>✓</span>
-                <p>Set nutritional and caloric goals for better diet.</p>
-            </article>
-
-            <article class="objective-item">
-                <span>✓</span>
-                <p>Track weight, calories, nutrition and dietary progress.</p>
-            </article>
-
-            <article class="objective-item">
-                <span>✓</span>
+            <article class="feature-card">
+                <span class="feature-number">04</span>
+                <h3>Meal Recommendations</h3>
                 <p>Receive suitable meal or recipe recommendations.</p>
             </article>
-
-            <article class="objective-item">
-                <span>✓</span>
-                <p>View progress toward dietary goals.</p>
-            </article>
-
-            <article class="objective-item">
-                <span>✓</span>
-                <p>Adjust goals as their needs change.</p>
-            </article>
         </div>
+    </div>
+</section>
+
+<!-- Product objectives -->
+<section class="section">
+    <div class="container about-project">
+        <div>
+            <p class="eyebrow">PRODUCT OBJECTIVES</p>
+            <h2>Manage nutrition and dietary goals effectively.</h2>
+        </div>
+
+        <ul class="check-list">
+            <li>Set nutritional and caloric goals for better diet.</li>
+            <li>Track weight, calories, nutrition and dietary progress.</li>
+            <li>View progress toward dietary goals.</li>
+            <li>Adjust goals as their needs change.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Closing description -->
+<section class="section section-soft">
+    <div class="container project-description">
+        <h2>NutriApp</h2>
+        <p>
+            Personalised nutrition guidance, goal tracking and meal recommendations
+            in one mobile app.
+        </p>
     </div>
 </section>
 {% endblock %}
